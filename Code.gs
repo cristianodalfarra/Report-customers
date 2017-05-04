@@ -19,8 +19,9 @@ function showPrompt() {
   var text = result.getResponseText();
   if (button == ui.Button.OK && text != "")  {
     // User clicked "OK".
-    ui.alert('Report salvato in  https://drive.google.com/drive/u/0/folders/0B8_ub-Gf21e-c0J6cmVlWWFNVUU');
     SpreadsheetToPDF(text)
+    ui.alert('Report salvato in  https://drive.google.com/drive/u/0/folders/0B8_ub-Gf21e-c0J6cmVlWWFNVUU');
+    
   } else if (button == ui.Button.CANCEL) {
     // User clicked "Cancel".
     ui.alert('Operazione annullata');
